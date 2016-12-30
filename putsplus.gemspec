@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Brian Jubelirer"]
   spec.email         = ["brian2386@gmail.com"]
 
-  spec.summary       = "Builds upon puts to improve cli UI"
+  spec.summary       = "Builds upon the default puts command to create more attractive and programmer friendly user interfaces for command line applications."
   spec.homepage      = "http://rubygems.org/gems/putsplus"
   spec.license       = "MIT"
 
