@@ -16,6 +16,8 @@ module Putsplus
 		end
 
 		def kill
+			print " " * `tput cols`.to_i
+			$stdout.flush
 			Thread.kill(@thread)
 		end
 
