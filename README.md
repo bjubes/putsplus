@@ -1,4 +1,4 @@
-# Putsplus ![Build Status](https://travis-ci.org/bjubes/putsplus.svg?branch=master)
+# Putsplus ![Build Status](https://travis-ci.org/bjubes/putsplus.svg?branch=master) [![Code Climate](https://codeclimate.com/github/bjubes/putsplus/badges/gpa.svg)](https://codeclimate.com/github/bjubes/putsplus)
 
 Builds upon the default `puts` command to create more attractive and programmer friendly user interfaces for command line applications.
 
