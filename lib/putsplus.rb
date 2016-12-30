@@ -40,6 +40,17 @@ module Putsplus
 		puts char * num
 	end
 
+	#
+	#Puts the string given and then underlines it with the character provided
+	#Arguments:
+	#   String: the string to puts
+	#   Char: the char used to underline the string. Defaults to '-'
+	#
+	def underline string, char = '-'
+		puts string
+		linebr string.length, char
+	end
+	
 	#PRIVATE VARS
 	private 
 
