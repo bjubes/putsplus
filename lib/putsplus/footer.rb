@@ -9,7 +9,7 @@ module Putsplus
 		def initialize(text = "")
 		@text = text
 		@thread = Thread.new {
-			while true do
+			loop do
 				sticky_footer @text
 			end
 		}
