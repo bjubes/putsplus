@@ -15,4 +15,22 @@ class PutsplusTest < Minitest::Test
   		tputs "test"
   		tputs "1", "2", "3", "4"
 	end
+
+	def test_footer_manually	
+		footer = Footer.new("inital text")
+		10.times do |i|
+		  sleep 0.1
+		  puts "testing"
+		  footer.text = i.to_s
+
+		  	if ( i == 3)
+				footer.kill
+			end
+
+			if (i == 6)
+				puts "activate!!"
+				footer = Footer.new
+			end
+		end
+	end
 end

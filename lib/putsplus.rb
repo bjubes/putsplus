@@ -1,6 +1,8 @@
 require "putsplus/version"
+require_relative "putsplus/footer.rb"
 
 module Putsplus
+	
 	#
 	#Puts only if obj is not null
 	#
@@ -37,7 +39,18 @@ module Putsplus
 		raise Exeception, "num must be an Integer" unless is_int?(num)
 		raise Exeception, "char must be an Character or String" unless (is_string? char)
 
-		puts char * num
+		puts char.to_s * num.to_i
+	end
+
+	#
+	#puts a full line break using the character provided
+	#
+	#Arguments:
+	#   char: the character to use. Defaults to '-'.
+	#
+	def full_linebr char = '-'
+		raise Exeception, "char must be one character only" unless char.to_s.length == 1
+		linebr `tput cols`, char
 	end
 
 	#
@@ -50,6 +63,7 @@ module Putsplus
 		puts string
 		linebr string.length, char
 	end
+
 	
 	#PRIVATE VARS
 	private 
